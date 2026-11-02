@@ -1,0 +1,8 @@
+services:
+  wing-website:
+    build: .
+    image: wing-group-website:latest
+    container_name: wing-website
+    restart: unless-stopped
+    ports:
+      - "8080:80"
